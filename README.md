@@ -2,6 +2,7 @@
 
 
 #Tenta evitar ataques
+- Hidden Manipulation:
 - DoS/DDoS (Denial of Service / Distributed DoS)
 - Cross-site scripting
 - Buffer Overflow:
