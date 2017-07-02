@@ -89,7 +89,7 @@
 			<div class="demo-card-wide mdl-card mdl-shadow--2dp">
 
 				<div class="mdl-card__title">
-					<h2 class="mdl-card__title-text">Login AdministraÃ§Ã£o</h2>
+					<h2 class="mdl-card__title-text">Login Administração</h2>
 
 				</div>
 				<div class="mdl-card__supporting-text">
@@ -134,39 +134,3 @@
 <jsp:include page="partials/javascript.jsp"></jsp:include>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<%--<hr align="center" width="90%" size="1" color=blue>--%>
-	<%--<center><h2>BLOG jef jef jef</h2></center>--%>
-	<%--<center><p>Ultimas 10 postagens</p></center>--%>
-	<%--<center><input type="button" onclick="document.location='todosPosts.html'" style="width: 10%" value="Ver Todos"></center>--%>
-	<%--<br>--%>
-	<%--<center><table border="2">--%>
-		<%--<tr>--%>
-			<%--<th style="width: 20%; text-align: center;">Autor</th>--%>
-			<%--<th style="width: 20%; text-align: center;">Titulo</th>--%>
-			<%--<th style="width: 40%; text-align: center;">Texto</th>--%>
-			<%--<th style="width: 20%; text-align: center;">Data</th>--%>
-			<%--<th style="width: 40%; text-align: center;">Aï¿½ï¿½o</th>--%>
-		<%--</tr>--%>
-		<%--<c:forEach items="${posts}" var="p">--%>
-			<%--<tr>--%>
-				<%--<td>${p.usuario.nomeUsuario}</td>--%>
-				<%--<td>${p.tituloPost}</td>--%>
-				<%--<td>${fn:substring(p.textoPost, 0,199)}...</td>--%>
-				<%--<td>${p.dataPost}</td>--%>
-				<%--<td><input type="button" onclick="document.location='verPost.html?id=${p.idPost}'" value="Post Completo"></td>--%>
-			<%--</tr>		--%>
-		 <%--</c:forEach>--%>
-	<%--</table></center>--%>

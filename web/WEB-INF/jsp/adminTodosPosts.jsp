@@ -89,22 +89,27 @@
 
                 <c:forEach items="${postsAdmin}" var="p">
                     <tr>
-                        <td>${p.idPost}</td>
-                        <td>${p.tituloPost}</td>
-                        <td>${p.textoPost}</td>
-                        <td>${p.dataPost}</td>
+                        <td><c:out value="${p.idPost}" escapeXml="true"/></td>
+                        <td><c:out value="${p.tituloPost}" escapeXml="true"/></td>
+                        <td><c:out value="${p.textoPost}" escapeXml="true"/></td>
+                        <td><c:out value="${p.dataPost}" escapeXml="true"/></td>
                         <td>
-                            <a class="btn btn-default " title="Visualizar" href="verPost.html?id=${p.idPost}" target="_blank">
+                            <a class="btn btn-default " title="Visualizar" target="_blank"
+
+                               href='verPost.html?id=<c:out value="${p.idPost}" escapeXml="true"/>' >
+
                                 <span class="glyphicon glyphicon-eye-open"></span>
                             </a>
 
-                            <a class="btn btn-default " title="Alterar" href="alterarPost.html?id=${p.idPost}">
+                            <a class="btn btn-default " title="Alterar"
+                               href='alterarPost.html?id=<c:out value="${p.idPost}" escapeXml="true"/>' >
                                 <span class="glyphicon glyphicon-edit"></span>
                             </a>
 
 
-                            <a class="btn btn-default"
-                               onclick="return confirm('Apagar Postagem?');" href="deletaPost.html?id=${p.idPost}">
+                            <a class="btn btn-default"  onclick="return confirm('Apagar Postagem?');"
+                               href='deletaPost.html?id=<c:out value="${p.idPost}" escapeXml="true"/>' >
+
                                 <span class="glyphicon glyphicon-trash"></span>
                             </a>
                         </td>

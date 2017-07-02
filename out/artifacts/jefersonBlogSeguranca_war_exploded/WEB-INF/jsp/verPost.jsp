@@ -27,13 +27,17 @@
 
 						<div class="mdl-card__media mdl-color-text--grey-50" style="min-height: 200px;">
 
-							<h3>${post.tituloPost}</h3>
+							<h3>
+								<c:out value=" ${post.tituloPost}" escapeXml="true" />
+							</h3>
 						</div>
 						<div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
 							<div class="section-spacer"></div>
 						</div>
 						<div class="content mdl-color-text--grey-700 mdl-card__supporting-text mdl-cell content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-							${post.textoPost}
+
+
+								<c:out value=" ${post.textoPost}" escapeXml="true" />
 						</div>
 
 					<div class="mdl-color-text--primary-contrast mdl-card__supporting-text comments">
@@ -60,7 +64,6 @@
 
 								</div>
 
-								<div class="g-recaptcha" data-sitekey="6LfamicUAAAAAOs6r7C5kAdlB-4Lbj_c0Dq4HrU5"></div>
 
 							</form>
 
@@ -71,11 +74,11 @@
 							<div class="comment mdl-color-text--grey-700">
 								<header class="comment__header">
 									<div class="comment__author">
-										<strong><c:out value=" ${cp.tituloComentario}" /></strong>
+										<strong><c:out value=" ${cp.tituloComentario}"  escapeXml="true" /></strong>
 									</div>
 								</header>
 								<div class="comment__text">
-									<c:out value=" ${cp.textoComentario}" />
+									<c:out value=" ${cp.textoComentario}" escapeXml="true" />
 								</div>
 							</div>
 						</c:forEach>

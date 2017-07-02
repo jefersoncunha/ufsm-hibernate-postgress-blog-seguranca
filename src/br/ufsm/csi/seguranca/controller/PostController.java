@@ -133,7 +133,7 @@ public class PostController {
 
     @RequestMapping(value="deletaPost.html")
     public ModelAndView excluirPost(Long id, HttpServletRequest request, Map<String, Object> model) throws Exception{
-        ModelAndView mv = new ModelAndView("redirect: todosPosts.html");
+        ModelAndView mv = new ModelAndView("redirect: adminHome.html");
         Usuario	u = (Usuario)request.getSession().getAttribute("usuario");
         Post post = new Post();
         post = daoPost.getPostId(id);

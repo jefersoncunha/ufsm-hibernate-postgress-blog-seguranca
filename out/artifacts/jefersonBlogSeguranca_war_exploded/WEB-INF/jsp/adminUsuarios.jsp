@@ -90,13 +90,15 @@
 
 				<c:forEach items="${usuariosCadastrados}" var="u">
 					<tr>
-						<td>${u.idUsuario}</td>
-						<td>${u.nomeUsuario}</td>
-						<td>${u.loginUsuario}</td>
-						<td>${u.ativo}</td>
+						<td><c:out value=" ${u.idUsuario}" escapeXml="true"/></td>
+						<td><c:out value=" ${u.nomeUsuario}" escapeXml="true"/></td>
+                        <td><c:out value=" ${u.loginUsuario}" escapeXml="true"/></td>
+                        <td><c:out value=" ${u.ativo}" escapeXml="true"/></td>
+
 						<td>
 							<a class="btn btn-default"
-							   onclick="return confirm('Ativar / Desativar');" href="ativaUsuario.html?id=${u.idUsuario}">
+							   onclick="return confirm('Ativar / Desativar');"
+                               href='ativaUsuario.html?id=<c:out value="${u.idUsuario}" escapeXml="true"/>' >
 								<span class="glyphicon glyphicon-edit"></span>
 							</a>
 						</td>

@@ -22,18 +22,18 @@
 
 					<div class="mdl-card__media mdl-color-text--grey-50">
 						<h3><a href="#">
-							<c:out value=" ${p.tituloPost}" />
+							<c:out value=" ${p.tituloPost}" escapeXml="true"/>
 
 							</a>
 						</h3>
 					</div>
 					<div class="mdl-color-text--grey-600 mdl-card__supporting-text">
-						<c:out value="${fn:substring(p.textoPost, 0,199)}..." />
+						<c:out value="${fn:substring(p.textoPost, 0,199)}..." escapeXml="true" />
 					</div>
 
 					<div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
 						<div>
-							<span><strong>Data:</strong> <c:out value=" ${p.dataPost}" /></span>
+							<span><strong>Data:</strong> <c:out value=" ${p.dataPost}" escapeXml="true" /></span>
 						</div>
 					</div>
 					<div class="mdl-card__actions mdl-card--border">
