@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ab44a39-a48f-4816-a8b2-cebbb0d4ed27" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/jefersonBlogSeguranca_war_exploded/WEB-INF/jsp/adminMeusPosts.jsp" afterPath="$PROJECT_DIR$/out/artifacts/jefersonBlogSeguranca_war_exploded/WEB-INF/jsp/adminMeusPosts.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/jefersonBlogSeguranca_war_exploded/WEB-INF/jsp/adminTodosPosts.jsp" afterPath="$PROJECT_DIR$/out/artifacts/jefersonBlogSeguranca_war_exploded/WEB-INF/jsp/adminTodosPosts.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/jefersonBlogSeguranca_war_exploded/WEB-INF/jsp/adminUsuarios.jsp" afterPath="$PROJECT_DIR$/out/artifacts/jefersonBlogSeguranca_war_exploded/WEB-INF/jsp/adminUsuarios.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/jefersonBlogSeguranca_war_exploded/WEB-INF/jsp/login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/jefersonBlogSeguranca_war_exploded/WEB-INF/jsp/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/jefersonBlogSeguranca_war_exploded/WEB-INF/jsp/todosPosts.jsp" afterPath="$PROJECT_DIR$/out/artifacts/jefersonBlogSeguranca_war_exploded/WEB-INF/jsp/todosPosts.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/jefersonBlogSeguranca_war_exploded/WEB-INF/jsp/verPost.jsp" afterPath="$PROJECT_DIR$/out/artifacts/jefersonBlogSeguranca_war_exploded/WEB-INF/jsp/verPost.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/PostController.java" afterPath="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/PostController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/adminMeusPosts.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/adminMeusPosts.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/adminTodosPosts.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/adminTodosPosts.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/adminUsuarios.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/adminUsuarios.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/login.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/todosPosts.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/todosPosts.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/verPost.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/verPost.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/UsuarioController.java" afterPath="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/UsuarioController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,16 +24,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/out/artifacts/jefersonBlogSeguranca_war_exploded/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.0.1.Final.jar!/META-INF/maven/org.jboss.spec.javax.transaction/jboss-transaction-api_1.2_spec/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="65" lean-forward="true" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="verPost.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/verPost.jsp">
           <provider selected="true" editor-type-id="text-editor">
@@ -58,12 +34,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="todosPosts.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="todosPosts.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/todosPosts.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="76" lean-forward="false" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="76" />
+            <state relative-caret-position="390">
+              <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsuarioController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/UsuarioController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="401">
+              <caret line="49" column="28" lean-forward="true" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#logout#0;class#UsuarioController#0" expanded="false" />
+                <element signature="method#cadastro#0;class#UsuarioController#0" expanded="false" />
+                <element signature="method#ativaUsuario#0;class#UsuarioController#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -214,7 +205,6 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/partials/header.jsp" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/adminPaginaUser.jsp" />
-        <option value="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/UsuarioController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/adminAlteraPost.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/partials-admin/menu_horizontal.jsp" />
         <option value="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/AutenticacaoInterceptor.java" />
@@ -225,6 +215,7 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/adminMeusPosts.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/adminTodosPosts.jsp" />
         <option value="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/PostController.java" />
+        <option value="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/UsuarioController.java" />
       </list>
     </option>
   </component>
@@ -960,12 +951,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1498954910043</updated>
-      <workItem from="1498954913994" duration="32932000" />
+      <workItem from="1498954913994" duration="33896000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32932000" />
+    <option name="totallyTimeSpent" value="33896000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="-83" width="1920" height="1020" extended-state="6" />
@@ -1208,18 +1199,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/UsuarioController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="64" column="24" lean-forward="true" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
-          <folding>
-            <element signature="method#logout#0;class#UsuarioController#0" expanded="false" />
-            <element signature="method#cadastro#0;class#UsuarioController#0" expanded="false" />
-            <element signature="method#ativaUsuario#0;class#UsuarioController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/model/Log.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
@@ -1350,9 +1329,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/todosPosts.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="76" lean-forward="false" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="76" />
+        <state relative-caret-position="390">
+          <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/UsuarioController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="49" column="28" lean-forward="true" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#logout#0;class#UsuarioController#0" expanded="false" />
+            <element signature="method#cadastro#0;class#UsuarioController#0" expanded="false" />
+            <element signature="method#ativaUsuario#0;class#UsuarioController#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

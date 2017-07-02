@@ -12,6 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 import sun.misc.BASE64Decoder;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import javax.transaction.Transactional;
 import java.security.MessageDigest;
 import java.sql.SQLException;
@@ -32,8 +33,11 @@ public class UsuarioController {
 
     @RequestMapping("login.html")
     @Transactional
-    public ModelAndView login(String login, String senha, String form, HttpServletRequest request, Map<String, Object> model)
-    throws SQLException {
+    public ModelAndView login(String login, String senha, String form, HttpServletRequest request,
+                              Map<String, Object> model, HttpSession session )throws SQLException {
+
+        session.invalidate(); // invalidar a sessão ja existente
+
         BASE64Decoder decoder = new BASE64Decoder();
         byte[] senha2 = null;
         byte[] crip = null;
