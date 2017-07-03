@@ -56,5 +56,5 @@ da disciplina;
     * Usando SSL
 * Auditoria de Acessos
     * Log guardando informações importantes
-* Disclose of Confidential Data e Data Tampering
+* Disclose of Confidential Data e Data Tampering /  Insecure Direct Object References
     * Autenticando todas as rotas mapeadas para garantir que somente usuarios ligados tenham acesso a elas
