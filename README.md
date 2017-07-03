@@ -34,5 +34,5 @@ da disciplina;
 - Buffer over-read:
 - Cookie Poisoning / Envenenamento de Cookies:
 - Ataques de Injeção de Código
-- Ataque na Sessão
-  - session.invalidate(); 
+- Ataque na Sessão - SessionFixationAttack
+  - session.invalidate(); 
