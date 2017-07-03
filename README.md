@@ -44,6 +44,7 @@ da disciplina;
     * Armazenando as informações na sessão, evitando o hidden nos formulário
     * Verificando e validando as informações vindas por Hidden input
 * Brute Force
+   * Usando captcha
 * Session Atack
     * Session Hijacking
         * Usando invalidate Session, 
