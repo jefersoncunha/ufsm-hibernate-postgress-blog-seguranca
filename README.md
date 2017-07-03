@@ -25,14 +25,36 @@ da disciplina;
 
 
 
-## Tenta evitar ataques
-- Hidden Manipulation:
-- DoS/DDoS (Denial of Service / Distributed DoS)
-- Cross-site scripting
-  - https://www.javacodegeeks.com/2012/08/cross-site-scripting-xss-and-prevention.html
-- Buffer Overflow:
-- Buffer over-read:
-- Cookie Poisoning / Envenenamento de Cookies:
-- Ataques de Injeção de Código
-- Ataque na Sessão - SessionFixationAttack
-   - session.invalidate(); 
+## EVITAR ATAQUES
+* DoS/DDoS
+* SQL Injection:
+    * Hibernate bloqueia injeções usando PreparedStatement do Criteria
+* SO Injection 
+* Cross-site scripting XSS
+    * XSS Reflected
+    * XSS Stored Cross Site Scripting 
+    * XSS DOM-based
+        * validação sistemática relacionada com: tipo de dados, tamanho, formato
+* Buffer Overflow
+* Buffer Over-Read:
+* Cookie Poisoning 
+* Hidden Manipulation - Form Field Manipulation 
+    * Armazenando as informações na sessão, evitando o hidden nos formulário
+    * Verificando e validando as informações vindas por Hidden input
+* Brute Force
+* Session Atack
+    * Session Hijacking
+        * Usando invalidate Session, 
+        * Senhas Criptografadas, 
+        * Usando SSL.
+    * SessionFixationAttack 
+        * Usando SSL.
+        * Usando invalidate Session 
+* Broken authentication , 
+    * impedindo Força Bruta por excesso de tentativas, inativando o usuário.
+* Replay Attack 
+    * Usando SSL
+* Auditoria de Acessos
+    * Log guardando informações importantes
+* Disclose of Confidential Data e Data Tampering
+    * Autenticando todas as rotas mapeadas para garantir que somente usuarios ligados tenham acesso a elas
