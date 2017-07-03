@@ -1,4 +1,4 @@
-# ufsm-hibernate-postgress-blog-seguranca
+# Blog - Hibernate + Postgress
 
 
 Desenvolva uma aplicação Web em Java utilizando-se de todos os padrões de
