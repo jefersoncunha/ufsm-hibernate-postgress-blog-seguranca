@@ -38,6 +38,8 @@ da disciplina;
 * Buffer Overflow
 * Buffer Over-Read:
 * Cookie Poisoning 
+    * Usando SSL
+    * Usar a sessão evitando jogar informações desnecessárias nos Cookies
 * Hidden Manipulation - Form Field Manipulation 
     * Armazenando as informações na sessão, evitando o hidden nos formulário
     * Verificando e validando as informações vindas por Hidden input
