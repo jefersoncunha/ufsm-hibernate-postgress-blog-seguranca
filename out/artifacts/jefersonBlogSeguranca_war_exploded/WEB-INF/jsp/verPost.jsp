@@ -1,6 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"  pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+
+
+
+
 <html>
 <head>
 	<title>POST</title>
@@ -44,13 +49,17 @@
 							<form action="cadastro-comentario.html?idPost=${post.idPost}" method="post" commandName="comentarios">
 
 								<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label has-placeholder is-invalid is-upgraded" data-upgraded=",MaterialTextfield">
-									<input required="" data-prompt-position="topLeft:0" class="mdl-textfield__input"  name="tituloComentario" type="text">
-									<label class="mdl-textfield__label" for="sample3">Nome</label>
+
+									<input name="tituloComentario" type="text" data-prompt-position="topLeft:0" class="mdl-textfield__input" value="${fn:escapeXml(param.tituloComentario)}">
+
+
+									<label class="mdl-textfield__label" for="Nome">Nome</label>
 								</div>
 
 								<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-upgraded" data-upgraded=",MaterialTextfield">
-									<textarea rows="1" class="mdl-textfield__input" id="comment" name="textoComentario"></textarea>
-									<label class="mdl-textfield__label" for="sample3">Comentario</label>
+									<textarea rows="1" class="mdl-textfield__input" id="comment" name="textoComentario" value="${fn:escapeXml(param.textoComentario)}">
+									</textarea>
+									<label class="mdl-textfield__label" for="Comentario">Comentario</label>
 								</div>
 
 

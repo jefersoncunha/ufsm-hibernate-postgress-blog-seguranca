@@ -1,7 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"  pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 
 
 <!DOCTYPE html>
@@ -80,7 +80,7 @@
 						<div aling="center">
 							<strong>
 		                    <span class="style5">
-		                      Ações
+		                      AÃ§Ãµes
 		                    </span>
 							</strong>
 						</div>
@@ -124,17 +124,17 @@
 
 							<div class="form-group">
 								<label for="nomeUsuario">Nome</label>
-								<input type="text" class="form-control" id="nomeUsuario" placeholder="Nome Usuario" name="nomeUsuario">
+								<input type="text" class="form-control" id="nomeUsuario" placeholder="Nome Usuario" name="nomeUsuario" value="${fn:escapeXml(param.nomeUsuario)}">
 							</div>
 
 							<div class="form-group">
 								<label for="loginUsuario">Login</label>
-								<input type="text" class="form-control" id="loginUsuario" placeholder="Login Usuario" name="loginUsuario">
+								<input type="text" class="form-control" id="loginUsuario" placeholder="Login Usuario" name="loginUsuario" value="${fn:escapeXml(param.loginUsuario)}">
 							</div>
 
 							<div class="form-group">
 								<label for="senhaUsuario">Senha</label>
-								<input type="password" class="form-control" id="senhaUsuario" placeholder="Senha Usuario" name="senhaUsuario">
+								<input type="password" class="form-control" id="senhaUsuario" placeholder="Senha Usuario" name="senhaUsuario" value="${fn:escapeXml(param.senhaUsuario)}">
 							</div>
 
 

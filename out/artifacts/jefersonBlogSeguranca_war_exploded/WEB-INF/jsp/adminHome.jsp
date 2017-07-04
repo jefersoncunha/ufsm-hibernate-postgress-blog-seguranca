@@ -1,4 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"  pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,9 +13,11 @@
 <div class="container">
 	<jsp:include page="partials-admin/menu_horizontal.jsp"></jsp:include>
 	<div class="jumbotron">
-		<h1>Sistema Blog Segurança</h1>
+		<h1>Sistema Blog SeguranÃ§a</h1>
 
-        <p>Seja bem-vindo ${usuario.nomeUsuario} </p>
+        <p><c:out value="${usuario.nomeUsuario}" escapeXml="true"/> </p>
+
+
 
 	</div>
 

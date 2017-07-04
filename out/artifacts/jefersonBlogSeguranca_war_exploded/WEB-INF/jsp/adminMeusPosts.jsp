@@ -1,6 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"  pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 
 
 
@@ -81,7 +82,7 @@
 						<div aling="center">
 							<strong>
 		                    <span class="style5">
-		                      Ações
+		                      AÃ§Ãµes
 		                    </span>
 							</strong>
 						</div>
@@ -137,12 +138,12 @@
 
 							<div class="form-group">
 								<label for="exampleInputEmail1">Titulo</label>
-								<input type="text" class="form-control" id="tituloPost" placeholder="Seu titulo" name="tituloPost">
+								<input type="text" class="form-control" id="tituloPost" placeholder="Seu titulo" name="tituloPost" value="${fn:escapeXml(param.tituloPost)}" >
 							</div>
 
 							<div class="form-group">
 								<label for="textoPost">Mensagem</label>
-								<textarea name="textoPost" id="textoPost" class="form-control" rows="3"></textarea>
+								<textarea name="textoPost" id="textoPost" class="form-control" rows="3" value="${fn:escapeXml(param.textoPost)}"></textarea>
 							</div>
 					</div>
 					<div class="modal-footer">

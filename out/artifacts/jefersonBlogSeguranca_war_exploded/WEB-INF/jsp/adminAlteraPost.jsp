@@ -1,5 +1,8 @@
 
-
+<%@ page language="java" contentType="text/html; charset=utf-8"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,15 +33,15 @@
 
 				<div class="form-group">
 					<label for="exampleInputEmail1">Titulo</label>
-					<input type="text" class="form-control" id="tituloPost" placeholder="Seu titulo" name="tituloPost">
+					<input type="text" class="form-control" id="tituloPost" placeholder="Seu titulo" name="tituloPost" value="${fn:escapeXml(param.tituloPost)}">
 				</div>
 
 				<div class="form-group">
 					<label for="textoPost">Mensagem</label>
-					<textarea name="textoPost" id="textoPost" class="form-control" rows="3"></textarea>
+					<textarea name="textoPost" id="textoPost" class="form-control" rows="3" value="${fn:escapeXml(param.textoPost)}"></textarea>
 				</div>
 
-				<input type="hidden" name="idPost" >
+				<input type="hidden" name="idPost">
 
 				<button type="submit" class="btn btn-default pull-right">Editar!</button>
 			</form>

@@ -1,6 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"  pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+
+
 <html>
 	<head>
 		<title>Login</title>
@@ -89,7 +92,7 @@
 			<div class="demo-card-wide mdl-card mdl-shadow--2dp">
 
 				<div class="mdl-card__title">
-					<h2 class="mdl-card__title-text">Login Administração</h2>
+					<h2 class="mdl-card__title-text">Login AdministraÃ§Ã£o</h2>
 
 				</div>
 				<div class="mdl-card__supporting-text">
@@ -98,14 +101,15 @@
 					<form method="POST" action="login.html" accept-charset="UTF-8">
 						<div id="name">
 							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label has-placeholder is-invalid is-upgraded" data-upgraded=",MaterialTextfield">
-								<input required="" data-prompt-position="topLeft:0" class="mdl-textfield__input"  name="login" type="text">
+								<input required="" data-prompt-position="topLeft:0" class="mdl-textfield__input"  name="login" type="text" value="${fn:escapeXml(param.login)}">
+
 								<label class="mdl-textfield__label" for="sample3">Login</label>
 							</div>
 
 						</div>
 						<div id="contact">
 							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label has-placeholder is-invalid is-upgraded" data-upgraded=",MaterialTextfield">
-								<input required="" data-prompt-position="topLeft:0" class="mdl-textfield__input"  name="senha" type="text">
+								<input required="" data-prompt-position="topLeft:0" class="mdl-textfield__input"  name="senha" type="text" value="${fn:escapeXml(param.senha)}">
 								<label class="mdl-textfield__label" for="sample3">Senha</label>
 							</div>
 
