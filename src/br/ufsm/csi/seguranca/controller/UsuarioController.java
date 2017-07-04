@@ -68,7 +68,7 @@ public class UsuarioController {
                     }
                 } else {
                     System.out.println("Erro login senha !=");
-                    if (u.getTentativas() > 5) {
+                    if (u.getTentativas() > 3) {
                         u.setAtivo(false);
                         mv.addObject("msg", "Erro ao realizar login!");
                     } else {
