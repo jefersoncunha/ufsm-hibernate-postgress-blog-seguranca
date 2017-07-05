@@ -25,16 +25,16 @@ da disciplina;
 
 
 
-## EVITAR ATAQUES
 * DoS/DDoS
 * SQL Injection:
     * Hibernate bloqueia injeções usando PreparedStatement do Criteria
-* SO Injection 
 * Cross-site scripting XSS
     * XSS Reflected
     * XSS Stored Cross Site Scripting 
     * XSS DOM-based
         * validação sistemática relacionada com: tipo de dados, tamanho, formato
+        * http://www.securitybrigade.com/blog/fixing-cross-site-scripting-in-java/
+        * http://www.securitybrigade.com/blog/fixing-cross-site-scripting-in-spring-mvc/
 * Buffer Overflow
 * Buffer Over-Read:
 * Cookie Poisoning 
@@ -44,20 +44,20 @@ da disciplina;
     * Armazenando as informações na sessão, evitando o hidden nos formulário
     * Verificando e validando as informações vindas por Hidden input
 * Brute Force
-   * Usando captcha
+    * Usando captcha
 * Session Atack
     * Session Hijacking
         * Usando invalidate Session, 
-        * Senhas Criptografadas, 
+        * Senhas com criptografia, 
         * Usando SSL.
     * SessionFixationAttack 
         * Usando SSL.
         * Usando invalidate Session 
 * Broken authentication , 
-    * impedindo Força Bruta por excesso de tentativas, inativando o usuário.
+    * impedindo Força Bruta por excesso de tentativas, inativando o usuário se errar mais que 3 logins
 * Replay Attack 
     * Usando SSL
 * Auditoria de Acessos
     * Log guardando informações importantes
 * Disclose of Confidential Data e Data Tampering /  Insecure Direct Object References
-    * Autenticando todas as rotas mapeadas para garantir que somente usuarios ligados tenham acesso a elas
+    * Autenticando todas as rotas mapeadas para garantir que somente usuários ligados tenham acesso a elas
